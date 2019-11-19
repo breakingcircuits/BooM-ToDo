@@ -7,4 +7,5 @@ Project-Exam for .NET Development in C#
 - _Jag kan enkelt flytta mina todo:s till action_
 - _Som användare vill jag kunna lägga till information och ändra i en to do_
 - _Som användare vill jag kunna spara programmets data_
-_Som utvecklare vill jag enkelt kunna bygga ut appen_
+- _Som utvecklare vill jag enkelt kunna bygga ut appen_
+
