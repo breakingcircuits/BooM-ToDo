@@ -13,7 +13,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+    <ProjectReference Include="..\BoomLibrary\BoomLibrary.csproj" />
   </ItemGroup>
 
 </Project>
