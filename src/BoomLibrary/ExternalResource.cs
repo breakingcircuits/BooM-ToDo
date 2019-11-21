@@ -12,6 +12,12 @@ namespace BoomLibrary
             Description = description;
             Status = false;
         }
+
+        public void SomethingOdd()
+        {
+            
+        }
+
         
 
         public override string ToString()
