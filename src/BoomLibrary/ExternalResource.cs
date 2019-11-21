@@ -12,6 +12,12 @@ namespace BoomLibrary
             Description = description;
             Status = false;
         }
+
+        public void SomethingOdd()
+        {
+            
+        }
+
         
         public void EditTitle(string title)
         {
