@@ -23,6 +23,11 @@ namespace BoomLibrary
             Title = description;
         }
 
+        public void SomethingElse()
+        {
+
+        }
+
         public override string ToString()
         {
             string str;
