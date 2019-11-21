@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using BoomLibrary;
 
 namespace BoomConsole
 {
@@ -7,6 +9,21 @@ namespace BoomConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            List<User> user = new List<User>();
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
