@@ -13,6 +13,15 @@ namespace BoomLibrary
             Status = false;
         }
         
+        public void EditTitle(string title)
+        {
+            Title = title;
+        }
+
+        public void EditDescription(string description)
+        {
+            Title = description;
+        }
 
         public override string ToString()
         {
