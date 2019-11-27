@@ -9,7 +9,12 @@ namespace BoomConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            List<User> user = new List<User>();
+            /// <summary>
+            /// To store users
+            /// </summary>
+            /// <typeparam name="User"></typeparam>
+            /// <returns></returns>//  
+            List<User> users = new List<User>();
         }
     }
 }
