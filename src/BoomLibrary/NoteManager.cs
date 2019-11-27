@@ -4,6 +4,7 @@ namespace BoomLibrary
     //Enum styr vilken view som ska visas av metod för att visa Note
     public enum NoteView{ Basic=1, Light, Expanded }
     
+    
     public class NoteManager
     {
         //variabel som håller håller koll på när senaste review gjordes
@@ -36,9 +37,11 @@ namespace BoomLibrary
             }
         }
         
-        //Visar Basic ToString 
-        private string GetBasicView()
+        //Visar endast titel på en Note 
+        private string GetBasicView(Note note)
         {
+            string title = note.Title;
+            return "Denna Note heter: " + title;
 
         }
         
@@ -52,9 +55,9 @@ namespace BoomLibrary
 
         //Expanded view tom 50 tecken i beskrivningen
 
-        private string GetExpandedView()
+        private string GetExpandedView(Note note)
         {
-
+            note.ToString();
         }
 
         //Metod som ändrar status på en note
