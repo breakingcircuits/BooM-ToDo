@@ -37,9 +37,11 @@ namespace BoomLibrary
             }
         }
         
-        //Visar Basic ToString 
+        //Visar endast titel på en Note 
         private string GetBasicView(Note note)
         {
+            string title = note.Title;
+            return "Denna Note heter: " + title;
 
         }
         
