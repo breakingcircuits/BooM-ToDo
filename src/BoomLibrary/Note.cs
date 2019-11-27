@@ -6,52 +6,51 @@ namespace BoomLibrary
     public class Note
     {
         // Fields & Properties
-        private string title;
-        private string description;
-        private int boom;
-        List<ExternalResource> checklist = new List<ExternalResource>();
+        public GTD_Status Status { get {return Status;} set { value = GTD_Status.HasNotBeenSet;} }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public int Boom { get; set; }
+        public List<ExternalResource> checklist = new List<ExternalResource>();
 
         // Methods
-        public override string ToString() 
+        public override string ToString()
         {
-            return $"Title: {title}\nDescription: {description}\nChecklist: BoomValue: {boom}";
+            return $"Status: {Status}\nTitle: {Title}\nDescription: {Description}\nChecklist: BoomValue: {Boom}";
         }
-        public void AddExternalResource() 
+        public void AddExternalResource()
         {
             // TODO: Implement AddExternalResource().
             //TODO: For every ext.resource added, increment boom by one.
         }
-        public DateTime CreateDate() 
+        public DateTime CreateDate()
         {
             return DateTime.Now;
         }
-        private string ViewCheckList() 
+        private string ViewCheckList()
         {
             string checklist = string.Empty;
             foreach (var item in checklist)
             {
-                checklist +=  item + " ";
+                checklist += item + " ";
             }
             return checklist;
         }
-        public string GetNoteValues() 
+        public string GetNoteValues()
         {
-             return $"Title: {title}\nDescription: {description}\nChecklist:{}\nBoomValue: {boom}"; 
+            return $"Status: {Status}\nTitle: {Title}\nDescription: {Description}\nChecklist: {checklist}\nBoomValue: {Boom}";
         }
     }
-    public class GTD_Enum
-    {
-        enum GTD_Status 
+
+    public enum GTD_Status
         {
+            HasNotBeenSet,
             In,
             NextActions,
             WaitingFor,
             Projects,
             SomeDayMaybe,
             Done
-
         }
-    }
 }
 
 
