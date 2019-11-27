@@ -2,8 +2,8 @@ using System;
 
 namespace BoomLibrary
 {
-    public class NoteBuilder
+    public class Menu
     {
-
+        
     }
 }
