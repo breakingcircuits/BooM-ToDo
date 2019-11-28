@@ -8,13 +8,9 @@ namespace BoomConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            /// <summary>
-            /// To store users
-            /// </summary>
-            /// <typeparam name="User"></typeparam>
-            /// <returns></returns>//  
-            List<User> users = new List<User>();
+            // Start the menu.
+            Menu menu = new Menu();
+            menu.StartMenu();
         }
     }
 }

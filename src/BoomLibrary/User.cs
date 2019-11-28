@@ -4,11 +4,11 @@ namespace BoomLibrary
 {
     public class User
     {
-        private string userName;
+        public string UserName { get; set; }
         private string userPassword;
 
         private int boomSum;
-        private guid Id;
+        //private guid Id;
 
         /// <summary>
         /// List to store notes from user
@@ -23,19 +23,12 @@ namespace BoomLibrary
         /// <param name="userNameInput"></param>
         public User(string userNameInput)
         {
-            userName = userNameInput;
+            UserName = userNameInput;
         }
 
         public User(string userNameInput, string userPasswordInput)
         {
             userPassword = userPasswordInput;
-        }
-
-        static void CreatUser()
-        {
-            var user = new User();
-            Guid guid = new Guid();
-            Id = guid;
         }
     }
 }

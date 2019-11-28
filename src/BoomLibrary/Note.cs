@@ -10,7 +10,7 @@ namespace BoomLibrary
         public string Title { get; set; }
         public string Description { get; set; }
         public int Boom { get; set; }
-        public List<ExternalResource> checklist = new List<ExternalResource>();
+        private List<ExternalResource> checklist = new List<ExternalResource>();
 
         // Methods
         public override string ToString()
