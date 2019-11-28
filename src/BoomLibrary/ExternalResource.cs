@@ -19,6 +19,20 @@ namespace BoomLibrary
         }
 
         
+        public void EditTitle(string title)
+        {
+            Title = title;
+        }
+
+        public void EditDescription(string description)
+        {
+            Title = description;
+        }
+
+        public void SomethingElse()
+        {
+
+        }
 
         public override string ToString()
         {
